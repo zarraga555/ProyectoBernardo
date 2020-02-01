@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smarthzone || Administrador</title>
+    <link rel="stylesheet" href="stylesAdmin.css">
+    <script src="admin.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Smarthzone</h1>
+    </header>
+    <h2>Registrar</h2>
+    <label for="nombre">Nombre</label>
+    <input type="text" id="nombre" required name="nombre">
+    <br><br>
+    <label for="modelo">Modelo</label>
+    <input type="text" id="modelo" required name="modelo">
+    <br><br>
+    <label for="marca">Marca</label>
+    <input type="text" id="marca" required name="marca">
+    <br><br>
+    <label for="tipo">Tipo</label>
+    <input type="text" id="tipo" required name="tipo">
+    <br><br>
+    <label for="anho">Año</label>
+    <input type="date" id="anho" required name="anho">
+    <br><br>
+
+    <button onclick="registrar();">Añadir</button>
+
+    <br><br>
+
+    <h2>Gestion</h2>
+    <br>
+    <table id="myTable" class="greenTable">
+        <tr>
+            <th>Nombre</th>
+            <th>Modelo</th>
+            <th>Marca</th>
+            <th>Tipo</th>
+            <th>Año</th>
+        </tr>
+    </table>
+</body>
+</html>

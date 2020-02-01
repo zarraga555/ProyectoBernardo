@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="admin.js"></script>
+</head>
+<body>
+    <h1>Gestión</h1>
+    <form onsubmit="return formSubmitted();">
+        <fieldset>
+            <legend>Registrar</legend>
+            <label>Nombre :
+                <input type="text" id="name" required>
+            </label>
+            <br><br>
+            <label>Modelo :
+                <input type="text" id="model" required>
+            </label>
+            <br><br>
+            <label>Tipo :
+                <input type="text" id="tipo" required>
+            </label>
+            <br><br>
+            <label>Marca :
+                <input type="text" id="marc" required>
+            </label>
+            <br><br>
+            <label>Año:
+                <input type="text" id="year" required>
+            </label>
+            <br><br>
+            <button>Registrar Producto</button>
+        </fieldset>        
+    </form>
+    <div id="products"></div>
+    <p>
+        <button onclick="emptyList();">Vaciar</button>
+        <button onclick="pm.save();">Guardar</button>
+        <button onclick="loadList();">Cargar</button>
+        <!--button onclick="editList();">Editar</!--button-->
+    </p>
+</body>
+</html>

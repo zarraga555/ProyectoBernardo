@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="scriptCliente.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <label for="ci">CI/NIT</label>
+            <input type="text" id="ci"><br><br>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre"><br><br>
+            <input type="button" onclick="guardarCliente()" value="guardar">
+            <input type="button" onclick="editar()" value="editar">
+        </fieldset>
+    </form><br><br>
+    <table>
+        <thead>
+        <tr>
+        <th>CI/NIT</th>
+        <th>Nombre</th>
+        </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+    </table>
+    <form >
+       <fieldset>
+            <label for="ci">CI/NIT</label>
+            <input type="number" required name="ci"><br><br>
+            <label for="nombre">Nombre</label>
+            <input type="text" required name="nombre"><br><br>
+            <label for="telf">Telefon</label>
+            <input type="number" required name="telf"><br><br>
+            <label for="email">E-mail</label>
+            <input type="email" required name="email"><br><br>
+            <button>guardar</button>
+        </fieldset>
+    </form>
+</body>
+</html>

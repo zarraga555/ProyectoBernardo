@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ventas</title>
+    <script src="js/ventas.js"></script>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+            <th><label>NIT</label></th>
+            <td>
+            <input type="text" id="nit">
+            </td>
+            </tr>
+
+            <tr>
+            <th><label>Nombre</label></th>
+            <td>
+            <input type="text" id="nombre">
+            </td>
+            </tr>
+
+            <tr>
+            <th><label>Producto</label></th>
+            <td>
+            <select id="producto">
+                <option value="op1">Opcion1</option>
+                <option value="op2">Opcion2</option>
+                <option value="op3">Opcion3</option>
+                <option value="op4">Opcion4</option>
+            </select>
+            </td>
+            </tr>
+
+            <tr>
+                <th><label>Precio</label></th>
+                <td>
+                <input type="text" id="precio">
+                </td>
+            </tr>
+
+            <tr>
+                <th><label>Cantidad</label></th>
+                <td> 
+                <input type="text" id="cantidad">
+                </td>
+            </tr>
+            <tr>
+                <th><label>Total</label></th>
+                <td>
+                <input type="text" id="total">
+                </td>
+            </tr>
+        </table>
+        <input type="button" value="guardar" onclick="guardarVentas()" id="guardar"/>
+    </form>
+    <table>
+        <thead>
+            <tr>
+                <th>NIT</th>
+                <th>Nombre</th>
+                <th>Producto</th>
+                <th>Precio</th>
+                <th>Cantidad</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody id="tabla">
+
+        </tbody>
+    </table>
+</body>
+</html>
